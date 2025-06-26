@@ -12,21 +12,63 @@
    <body>
       <!--Card-->
       <div class="card">
-         <p class="subtitle">Git</p>
-          <ul>
-            <li>ls - расшифровывается как "List files in the directory", что переводится как "перечислить все файлы в папке" или "вывести на экран список файлов в папке".</li>
-            <li>cd - расшифровывается как "Change directory", что переводится как "сменить папку" или "перейти в другую папку".</li>
-            <li>pwd - расшифровывается как "Present working directory", что переводится как "текущая рабочая директория". То есть команда pwd показывает, в какой сейчас папке мы находимся. </li>
-            <li>mkdir - расшифровывается как "Make directory", что переводится как "создать папку".</li>
-            <li>mv - расфшифровывается как"Move", что переводится как "переместить", "передвинуть". С помощью нее можно переместить, переименовать или удалить файл/</li>
-         </ul>
+         <p class="subtitle"><br>Git</p>
+    <h3>Базовые операции</h3>
+    <ul>
+        <li><code>git init</code> — создание нового репозитория</li>
+        <li><code>git clone ссылка</code> — клонирование репозитория</li>
+        <li><code>git remote add origin ссылка</code> — связь с удаленным репозиторием</li>
+    </ul>
+
+    <h3>Работа с изменениями</h3>
+    <ul>
+        <li><code>git status</code> — проверка статуса файлов</li>
+        <li><code>git add файл</code> — добавление файла в индекс</li>
+        <li><code>git add .</code> — добавление всех файлов</li>
+        <li><code>git commit -m "сообщение"</code> — создание коммита</li>
+        <li><code>git log</code> — просмотр истории коммитов</li>
+    </ul>
+
+    <h3>Синхронизация</h3>
+    <ul>
+        <li><code>git pull</code> — получение изменений</li>
+        <li><code>git push</code> — отправка изменений</li>
+        <li><code>git push -u origin ветка</code> — первая отправка ветки</li>
+    </ul>
+
+    <h3>Работа с ветками</h3>
+    <ul>
+        <li><code>git branch</code> — список веток</li>
+        <li><code>git switch ветка</code> — переключение на ветку</li>
+        <li><code>git checkout -b ветка</code> — создание новой ветки</li>
+        <li><code>git merge ветка</code> — слияние веток</li>
+    </ul>
+
+    <h3>Отмена изменений</h3>
+    <ul>
+        <li><code>git restore файл</code> — отмена изменений файла</li>
+        <li><code>git reset --hard</code> — полный откат изменений</li>
+        <li><code>git stash</code> — сохранение изменений</li>
+    </ul>
+
+    <h3>Дополнительные команды</h3>
+    <ul>
+        <li><code>git diff</code> — сравнение версий</li>
+        <li><code>git show хеш</code> — детали коммита</li>
+        <li><code>git clean</code> — очистка файлов</li>
+    </ul>
+</body>
+               <p class="location" align="center">
+            <a href="../index.html">Вернуться на главную</a> 
+         </p>
+         <br>
       </div>
       <!--footer-->
       <footer class="animated fadeIn">
-         <p class="location" align="center">
-            <a href="mac.html">Вернуся на главную</a>
          </p>
-         &copy; 202 4. SkyPro
+         
+         &copy; 2025. SkyPro
       </footer>
    </body>
 </html>
+
